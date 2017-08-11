@@ -21,8 +21,17 @@ Each employee can:
 
 call your class Employee and receive all the data in the constructor in the order listed
 */
-
-
+class Employee{
+  constructor(first_name,last_name,email,age){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+  }
+  makeWidget(){
+    return this.first_name + " " + this.last_name + " " + 'Widget';
+  }
+}
 
 /*
 
@@ -40,7 +49,25 @@ They can (methods) :
 call your class Manager
 
 */
+class Manager {
+  constructor (first_name, last_name, email, age){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
 
+  }
+  reports(){
+    return this.reports = [];
+  }
+  hire(){
+    return this.first_name;
+  }
+  fire(index){
+    return this.fire = [];
+  }
+
+}
 
 
 
@@ -64,7 +91,32 @@ Everytime they fire an employee they get a bonus of $100 add to their .
 
 call you class ProgressiveManager
 */
+class ProgressiveManager {
+  constructor (first_name, last_name, email, age, title, bonus){
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.title = title;
+    this.bonus = bonus;
+  }
+  reports(){
+    return this.reports = [];
+  }
+  hire(first_name){
+    return this.first_name;
+  }
+  fire(index){
+    return this.fire = [];
+  }
+  title(){
 
+  }
+  bonus(){
+
+  }
+
+}
 
 
 
@@ -90,3 +142,19 @@ It can :
       It should set decrease wear_and_tear_count by 10, and set needs_reboot to false
 
 */
+class Machine{
+  constructor(widgets_made_count, wear_and_tear_count,needs_reboot){
+      this.widgets_made_count = 0;
+      this.wear_and_tear_count = 0;
+      this.needs_reboot = false;
+  }
+  makeWidgets(num){
+    return this.widgets_made_count = num + widgets_made_count;
+  }
+  fixMachine(){
+    return this.needs_reboot = true;
+  }
+  reboot(){
+
+  }
+}
