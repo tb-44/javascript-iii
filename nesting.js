@@ -63,6 +63,8 @@ function removeDuplicates(arr){
   }
   return arr;
 };
+console.log(removeDuplicates(workplaceAccidents));
+
 
 
 var cat = {
@@ -79,3 +81,4 @@ var cat = {
 // 1. Assign the value of Grumpy's 2nd activity to the variable below.
 // Code here
 var grumpyActivity = cat.catFriends[0].activities[1];
+console.log(grumpyActivity);
