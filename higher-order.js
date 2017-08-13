@@ -42,7 +42,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 // });
 
 let myStrongest = monstersInYourPocket.filter((e) => e.CP > 200);
-console.log(myStrongest);
+// console.log(myStrongest);
 
 // Below we have an array of orders.  but they all have different tax rates.
 // We want to make a new array of total prices.
@@ -51,10 +51,16 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 {"price":72,"tax":0.14},{"price":51,"tax":0.09},{"price":89,"tax":0.15},
 {"price":48,"tax":0.13}]
 
-let ordersTotal = orders.map(function(e){
+var ordersTotal = orders.map(function(e){
   return e.price + e.tax;
 });
-// console.log(ordersTotal);
+
+var sum = ordersTotal.reduce(add, 0);
+function add(a,b){
+  return a + b;
+}
+// let ordersTotal = orders.map((e) => e.price + e.tax);
+// console.log(sum);
 
 // We want to create a total for the purcahses
 const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
