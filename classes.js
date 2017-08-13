@@ -50,15 +50,16 @@ call your class Manager
 
 */
 class Manager {
-  constructor (first_name, last_name, email, age){
+  constructor (first_name, last_name, email, age, reports){
     this.first_name = first_name;
     this.last_name = last_name;
     this.email = email;
     this.age = age;
+    this.reports = [];
 
   }
   reports(){
-    return this.reports = [];
+    return this.reports = this.first_name + this.last_name + this.email + this.age;
   }
   hire(){
     return this.first_name;
@@ -68,9 +69,6 @@ class Manager {
   }
 
 }
-
-
-
 
 /*
 Manager for Widget Co. get promoted when they get more employees, and get a bonus when they fire employees.
@@ -143,7 +141,7 @@ It can :
 
 */
 class Machine{
-  constructor(widgets_made_count, wear_and_tear_count,needs_reboot){
+  constructor(){
       this.widgets_made_count = 0;
       this.wear_and_tear_count = 0;
       this.needs_reboot = false;
@@ -152,9 +150,9 @@ class Machine{
     return this.widgets_made_count = num + widgets_made_count;
   }
   fixMachine(){
-    return this.needs_reboot = true;
+    return this.wear_and_tear_count = ++wear_and_tear_count;
   }
   reboot(){
-
+    return this.needs_reboot = true;
   }
 }
